@@ -10,6 +10,18 @@
 		<a href="https://garyleeshaoyu.github.io">@Gary's</a>
 		.
 		</p>
+
+		<button onclick="ReColorClick()">ReColor</button>
 		
+		<script>
+		function ReColorClick() {
+			var col = document.body.style.backgroundColor;
+			if(col == "green")
+				col = "white";
+			else
+				col = "green";
+			document.body.style.backgroundColor = col;
+		}
+		</script>
 	</body>
 </html>
