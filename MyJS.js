@@ -6,8 +6,30 @@ function ReColorClick() {
         col = "blue";
     document.body.style.backgroundColor = col;
 }
+
+
+function updateSurvey(file){
+    document.body.style.backgroundColor = "red";
+
+    var fh = fopen(file, 3);
+    if(fh == -1){
+        //alert("file could not be opened");
+    }else{
+        document.body.style.backgroundColor = "blue";
+        fwrite(fh, "0,0"); // Write the string to a file
+        fclose(fh); // Close the file
+    }
+
+}
+
 function readTextFile(file)
 {
+    document.body.style.backgroundColor = "gray";
+
+    updateSurvey(file);
+    document.body.style.backgroundColor = "green";
+
+
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()

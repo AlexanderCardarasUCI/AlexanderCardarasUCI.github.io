@@ -13,11 +13,11 @@
 
 			<form>
 			Yes:
-			<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+			<input type="radio" name="vote" value="0" onclick="updateSurvey(this.value)">
 			<br>No:
-			<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+			<input type="radio" name="vote" value="1" onclick="updateSurvey(this.value)">
 			</form>
-			<button onclick="readTextFile('test.txt')">Results</button>
+			<button onclick="readTextFile('SurveyResults.txt')">Results</button>
 			
 		</div>
 
