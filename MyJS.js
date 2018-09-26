@@ -8,7 +8,6 @@ function ReColorClick() {
 }
 function readTextFile(file)
 {
-    document.body.style.backgroundColor = "red";
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
