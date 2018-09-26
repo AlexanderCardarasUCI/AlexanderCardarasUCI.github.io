@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>Alex's Page</title>
+		<script src="MyJS.js"></script>
 	</head>
 
 	<body>
 		<div id="poll">
-			<h3>Do you think my Webpage is better than 
+			<h3>Do you think my webpage is better than 
 			<a href="https://garyleeshaoyu.github.io">Gary's</a>
 			?</h3>
 
@@ -16,6 +17,8 @@
 			<br>No:
 			<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
 			</form>
+			<button onclick="readTextFile('test.txt')">button</button>
+			
 		</div>
 
 	</body>
