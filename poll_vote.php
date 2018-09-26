@@ -28,13 +28,8 @@ fclose($fp);
 <h2>Result:</h2>
 <table>
 	<tr>
-		<td>Yes:</td>
-		<td>
-			<img src="poll.gif"
-				width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
-				height='20'>
-			<?php echo(100*round($yes/($no+$yes),2)); ?>%
-		</td>
+		<td>Yes: $yes</td>
+		
 	</tr>
 
 	<tr>
