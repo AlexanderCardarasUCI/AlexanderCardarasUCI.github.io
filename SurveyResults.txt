@@ -1,3 +1,0 @@
-Survey Result:
-Yes: 125231
-No: 0
